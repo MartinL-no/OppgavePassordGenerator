@@ -6,7 +6,10 @@ namespace OppgavePassordGenerator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            if (args.Length == 0)
+            {
+                MyConsole.ShowInputInstructions();
+            }
         }
     }
 }
